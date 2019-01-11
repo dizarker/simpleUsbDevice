@@ -1,0 +1,19 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Projects/simpleUsbDevice/ls_usb_send_test_isim_beh.exe" -prj "D:/Projects/simpleUsbDevice/ls_usb_send_test_beh.prj" "work.ls_usb_send_test" "work.glbl" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Projects/simpleUsbDevice/ls_usb_send.v" into library work
+Analyzing Verilog file "D:/Projects/simpleUsbDevice/ls_usb_send_test.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ls_usb_send
+Compiling module ls_usb_send_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable D:/Projects/simpleUsbDevice/ls_usb_send_test_isim_beh.exe
+Fuse Memory Usage: 27932 KB
+Fuse CPU Usage: 421 ms

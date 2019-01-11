@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Projects/simpleUsbDevice/ls_usb_send_test_isim_beh.exe" -prj "D:/Projects/simpleUsbDevice/ls_usb_send_test_beh.prj" "work.ls_usb_send_test" "work.glbl" 
