@@ -1,0 +1,13 @@
+[Inputs]
+clk
+dp
+dm
+[Outputs]
+EOP
+rdata_ready
+=rdata[7:0]=
+=rbyte_cnt[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ls_usb_recv
+

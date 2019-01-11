@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="25" delta="old" >"D:\Projects\simpleUsbDevice\simpleUsbDevice.vf" Line 84: Module &lt;<arg fmt="%s" index="1">clkSrc</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">clk_in1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="old" >"D:\Projects\simpleUsbDevice\simpleUsbDevice.vf" Line 85: Module &lt;<arg fmt="%s" index="1">clkSrc</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">clk_out1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\Projects\simpleUsbDevice\simpleUsbDevice.vf" Line 84: Port <arg fmt="%s" index="1">CLK_IN1</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Projects\simpleUsbDevice\ipcore_dir\clkSrc.v" Line 126: Assignment to <arg fmt="%s" index="1">locked_int</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Projects\simpleUsbDevice\ipcore_dir\clkSrc.v" Line 127: Assignment to <arg fmt="%s" index="1">status_int</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="error" file="HDLCompiler" num="267" delta="old" >"D:\Projects\simpleUsbDevice\simpleUsbDevice.vf" Line 84: Cannot find port <arg fmt="%s" index="1">clk_in1</arg> on this module
+</msg>
+
+<msg type="error" file="HDLCompiler" num="267" delta="old" >"D:\Projects\simpleUsbDevice\simpleUsbDevice.vf" Line 85: Cannot find port <arg fmt="%s" index="1">clk_out1</arg> on this module
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\Projects\simpleUsbDevice\simpleUsbDevice.vf" Line 23: Empty module &lt;<arg fmt="%s" index="1">simpleUsbDevice</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+

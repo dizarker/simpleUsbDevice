@@ -1,0 +1,17 @@
+[Inputs]
+clk
+reset
+start_pkt
+last_pkt_byte
+=sbyte[7:0]=
+[Outputs]
+sbit
+dp
+dm
+bus_enable
+show_next
+six_ones
+[BiDir]
+[ATTRIBUTES]
+VeriModel ls_usb_send
+

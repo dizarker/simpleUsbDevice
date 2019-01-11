@@ -1,0 +1,9 @@
+MODULE simpleUsbDevice
+	SUBMODULE ls_usb_core
+		INSTANCE XLXI_1
+	SUBMODULE ls_usb_send
+		INSTANCE XLXI_2
+	SUBMODULE ls_usb_recv
+		INSTANCE XLXI_3
+	SUBMODULE clkSrc
+		INSTANCE XLXI_17

@@ -22,24 +22,49 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="simpleUsbDevice.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ls_usb_core.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ls_usb_core.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ls_usb_core_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ls_usb_recv.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ls_usb_recv.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ls_usb_recv_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ls_usb_send.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ls_usb_send.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ls_usb_send_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ls_usb_send_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ls_usb_send_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ls_usb_send_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="simpleUsbDevice.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="simpleUsbDevice.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="simpleUsbDevice.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="simpleUsbDevice.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="simpleUsbDevice.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="simpleUsbDevice.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="simpleUsbDevice.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="simpleUsbDevice.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="simpleUsbDevice.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="simpleUsbDevice.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="simpleUsbDevice_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="simpleUsbDevice_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="simpleUsbDevice_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1547245569" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1547245569">
       <status xil_pn:value="SuccessfullyRun"/>
     </transform>
-    <transform xil_pn:end_ts="1547247521" xil_pn:in_ck="211796299594109904" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1547247521">
+    <transform xil_pn:end_ts="1547249077" xil_pn:in_ck="8992514669866138532" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1547249077">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ls_usb_core.v"/>
       <outfile xil_pn:name="ls_usb_recv.v"/>
       <outfile xil_pn:name="ls_usb_send.v"/>
     </transform>
@@ -51,11 +76,18 @@
     <transform xil_pn:end_ts="1547245977" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8420372325454880795" xil_pn:start_ts="1547245977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1547245977" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8567290211720590902" xil_pn:start_ts="1547245977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1547245977" xil_pn:in_ck="-147578432856227191" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1547245977">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -71,11 +103,12 @@
     </transform>
     <transform xil_pn:end_ts="1547245985" xil_pn:in_ck="-147578432856227191" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3061510631776456653" xil_pn:start_ts="1547245977">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
@@ -91,6 +124,52 @@
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1547249927" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1547249927">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547250271" xil_pn:in_ck="6424688355364896976" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1574630009712716889" xil_pn:start_ts="1547250269">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="simpleUsbDevice.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1547250409" xil_pn:in_ck="-2674789275064711671" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5644270667155017495" xil_pn:start_ts="1547250409">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/clkSrc.v"/>
+      <outfile xil_pn:name="ipcore_dir/clkSrc/example_design/clkSrc_exdes.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1547249930" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1547249930">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547249930" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4605609818228328421" xil_pn:start_ts="1547249930">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547249930" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1547249930">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547249930" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8159710580043960973" xil_pn:start_ts="1547249930">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547250415" xil_pn:in_ck="-5603123954806712711" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-3998410863713271592" xil_pn:start_ts="1547250409">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="simpleUsbDevice.jhd"/>
+      <outfile xil_pn:name="simpleUsbDevice.lso"/>
+      <outfile xil_pn:name="simpleUsbDevice.ngc"/>
+      <outfile xil_pn:name="simpleUsbDevice.ngr"/>
+      <outfile xil_pn:name="simpleUsbDevice.prj"/>
+      <outfile xil_pn:name="simpleUsbDevice.syr"/>
+      <outfile xil_pn:name="simpleUsbDevice.xst"/>
+      <outfile xil_pn:name="simpleUsbDevice_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
   </transforms>
 

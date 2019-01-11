@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/clkSrc.v"
+verilog work "ipcore_dir/clkSrc/example_design/clkSrc_exdes.v"
+verilog work "ls_usb_send.v"
+verilog work "ls_usb_recv.v"
+verilog work "ls_usb_core.v"
+verilog work "simpleUsbDevice.vf"

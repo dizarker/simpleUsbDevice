@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/Projects/simpleUsbDevice/ls_usb_recv.v -lang verilog -prj simpleUsbDevice -o ls_usb_recv.spl -module ls_usb_recv -template D:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 ls_usb_recv.spl D:/Projects/simpleUsbDevice/ls_usb_recv.sym 

@@ -1,0 +1,16 @@
+[Inputs]
+clk
+EOP
+wre
+show_next
+=data[7:0]=
+=rbyte_cnt[3:0]=
+[Outputs]
+start_pkt
+last_pkt_byte
+=sbyte[7:0]=
+=leds[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ls_usb_core
+

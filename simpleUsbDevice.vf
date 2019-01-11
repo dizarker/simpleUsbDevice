@@ -1,0 +1,86 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.2
+//  \   \         Application : sch2hdl
+//  /   /         Filename : simpleUsbDevice.vf
+// /___/   /\     Timestamp : 01/12/2019 02:44:30
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath D:/Projects/simpleUsbDevice/ipcore_dir -intstyle ise -family spartan6 -verilog D:/Projects/simpleUsbDevice/simpleUsbDevice.vf -w D:/Projects/simpleUsbDevice/simpleUsbDevice.sch
+//Design Name: simpleUsbDevice
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module simpleUsbDevice(clk50in, 
+                       DM, 
+                       DP, 
+                       LEDS);
+
+    input clk50in;
+   output DM;
+   output DP;
+   output [7:0] LEDS;
+   
+   wire [7:0] XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire [3:0] XLXN_4;
+   wire [7:0] XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_54;
+   wire DM_DUMMY;
+   wire DP_DUMMY;
+   
+   assign DM = DM_DUMMY;
+   assign DP = DP_DUMMY;
+   ls_usb_core  XLXI_1 (.clk(XLXN_54), 
+                       .data(XLXN_5[7:0]), 
+                       .EOP(XLXN_8), 
+                       .rbyte_cnt(XLXN_4[3:0]), 
+                       .show_next(XLXN_7), 
+                       .wre(XLXN_6), 
+                       .last_pkt_byte(XLXN_2), 
+                       .leds(LEDS[7:0]), 
+                       .sbyte(XLXN_1[7:0]), 
+                       .start_pkt(XLXN_3));
+   ls_usb_send  XLXI_2 (.clk(XLXN_54), 
+                       .last_pkt_byte(XLXN_2), 
+                       .reset(XLXN_8), 
+                       .sbyte(XLXN_1[7:0]), 
+                       .start_pkt(XLXN_3), 
+                       .bus_enable(XLXN_13), 
+                       .dm(XLXN_12), 
+                       .dp(XLXN_11), 
+                       .sbit(), 
+                       .show_next(XLXN_7), 
+                       .six_ones());
+   ls_usb_recv  XLXI_3 (.clk(XLXN_54), 
+                       .dm(DM_DUMMY), 
+                       .dp(DP_DUMMY), 
+                       .EOP(XLXN_8), 
+                       .rbyte_cnt(XLXN_4[3:0]), 
+                       .rdata(XLXN_5[7:0]), 
+                       .rdata_ready(XLXN_6));
+   BUFGCE  XLXI_4 (.CE(XLXN_13), 
+                  .I(XLXN_11), 
+                  .O(DP_DUMMY));
+   BUFGCE  XLXI_5 (.CE(XLXN_13), 
+                  .I(XLXN_12), 
+                  .O(DM_DUMMY));
+   clkSrc  XLXI_17 (.clk_in1(clk50in), 
+                   .clk_out1(XLXN_54));
+endmodule

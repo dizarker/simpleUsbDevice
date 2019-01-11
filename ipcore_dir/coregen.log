@@ -1,0 +1,50 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'clkSrc'...
+WARNING:sim - A core named 'clkSrc' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'clkSrc'...
+Delivering associated files for 'clkSrc'...
+WARNING:sim - Component clk_wiz_v3_6 does not have a valid model name for
+   Verilog synthesis
+Delivering EJava files for 'clkSrc'...
+Delivered 3 files into directory
+D:/Projects/simpleUsbDevice/ipcore_dir/tmp/_cg/clkSrc
+Delivered 1 file into directory
+D:/Projects/simpleUsbDevice/ipcore_dir/tmp/_cg/clkSrc
+Generating ASY schematic symbol...
+Loading device for application Rf_Device from file '6slx9.nph' in environment
+D:\Xilinx\14.2\ISE_DS\ISE\.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'clkSrc'...
+Generating ISE project...
+XCO file found: clkSrc.xco
+XMDF file found: clkSrc_xmdf.tcl
+Adding
+D:/Projects/simpleUsbDevice/ipcore_dir/tmp/_cg/clkSrc/example_design/clkSrc_exde
+s.ucf -view all -origin_type created
+Adding
+D:/Projects/simpleUsbDevice/ipcore_dir/tmp/_cg/clkSrc/example_design/clkSrc_exde
+s.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "D:/Projects/simpleUsbDevice/ipcore_dir/tmp/_cg/clkSrc/example_design/clkSrc_
+   exdes.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding D:/Projects/simpleUsbDevice/ipcore_dir/tmp/_cg/clkSrc.asy -view all
+-origin_type imported
+Adding D:/Projects/simpleUsbDevice/ipcore_dir/tmp/_cg/clkSrc.v -view all
+-origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "D:/Projects/simpleUsbDevice/ipcore_dir/tmp/_cg/clkSrc.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding D:/Projects/simpleUsbDevice/ipcore_dir/tmp/_cg/clkSrc.veo -view all
+-origin_type imported
+WARNING: This core does not have a top level called "/clkSrc"
+WARNING: Top level has been set to "/clkSrc_exdes"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'clkSrc'.
